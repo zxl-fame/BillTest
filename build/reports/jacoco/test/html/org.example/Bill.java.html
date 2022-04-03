@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Bill.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BillTest</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">Bill.java</span></div><h1>Bill.java</h1><pre class="source lang-java linenums">package org.example;
+
+/**
+ * @author 86173
+ */
+<span class="fc" id="L6">public class Bill {</span>
+<span class="fc" id="L7">    public static int[] startTime = new int[3];</span>
+<span class="fc" id="L8">    public static int[] endTime = new int[3];</span>
+<span class="fc" id="L9">    public static int[] poorTime = new int[3];</span>
+    public static int time;
+    public static float money;
+    public static int Year;
+    public static int Month;
+    public static int Day;
+<span class="fc" id="L15">    public static int T = 0;</span>
+<span class="fc" id="L16">    public static int W = 1;</span>
+<span class="fc" id="L17">    public static int M = 1;</span>
+
+    public static float countBill(int year, int month, int day, int SHour, int SMinute, int SSecond,
+                                  int EHour, int EMinute, int ESecond) {
+<span class="fc" id="L21">        Year = year;</span>
+<span class="fc" id="L22">        Month = month;</span>
+<span class="fc" id="L23">        Day = day;</span>
+<span class="fc" id="L24">        startTime[0] = SHour;</span>
+<span class="fc" id="L25">        startTime[1] = SMinute;</span>
+<span class="fc" id="L26">        startTime[2] = SSecond;</span>
+<span class="fc" id="L27">        endTime[0] = EHour;</span>
+<span class="fc" id="L28">        endTime[1] = EMinute;</span>
+<span class="fc" id="L29">        endTime[2] = ESecond;</span>
+<span class="fc" id="L30">        Date();</span>
+<span class="fc" id="L31">        Time();</span>
+<span class="fc" id="L32">        Money();</span>
+<span class="fc" id="L33">        return money;</span>
+    }
+
+    public static void Date() {
+        //菜勒公式(给一个日期判断是星期几)
+<span class="pc bpc" id="L38" title="2 of 4 branches missed.">        if (1 == Month || 2 == Month) {</span>
+<span class="nc" id="L39">            Year--;</span>
+<span class="nc" id="L40">            money += 12;</span>
+        }
+<span class="fc" id="L42">        W = (Day + 2 * Month + 3 * (Month + 1) / 5 + Year + Year / 4 - Year / 100 + Year / 400 + 1) % 7;</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if (Month &gt; 12) {</span>
+<span class="nc" id="L44">            Year++;</span>
+<span class="nc" id="L45">            Month -= 12;</span>
+        }
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (0 == W) {</span>
+<span class="pc bpc" id="L48" title="2 of 6 branches missed.">            if (3 == Month &amp;&amp; Day &gt;= 25 &amp;&amp; Day &lt;= 31) {</span>
+<span class="fc" id="L49">                T = 1;</span>
+<span class="pc bpc" id="L50" title="3 of 6 branches missed.">            } else if (11 == Month &amp;&amp; Day &gt;= 1 &amp;&amp; Day &lt;= 7) {</span>
+<span class="fc" id="L51">                T = 2;</span>
+            } else {
+<span class="nc" id="L53">                T = 0;</span>
+            }
+        } else {
+<span class="fc" id="L56">            T = 0;</span>
+        }
+<span class="fc" id="L58">    }</span>
+
+    public static void Time() {
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        if (startTime[0] &gt; endTime[0]) {</span>
+<span class="fc" id="L62">            endTime[0] += 24;</span>
+        }
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        for (int i = 0; i &lt; 3; i++) {</span>
+<span class="fc" id="L65">            poorTime[i] = endTime[i] - startTime[i];</span>
+        }
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (0 == T) {</span>
+<span class="fc bfc" id="L68" title="All 4 branches covered.">            if (6 == W &amp;&amp; endTime[0] &gt;= 27) {</span>
+<span class="pc bpc" id="L69" title="5 of 6 branches missed.">                if (3 == Month &amp;&amp; Day &gt;= 24 &amp;&amp; Day &lt;= 30) {</span>
+<span class="nc" id="L70">                    poorTime[0]--;</span>
+<span class="pc bpc" id="L71" title="3 of 6 branches missed.">                } else if (11 == Month &amp;&amp; Day &gt;= 1 &amp;&amp; Day &lt;= 7) {</span>
+<span class="fc" id="L72">                    poorTime[0]++;</span>
+                }
+<span class="pc bpc" id="L74" title="9 of 12 branches missed.">            } else if (6 == W &amp;&amp; endTime[0] &gt;= 26 &amp;&amp; endTime[0] &lt;= 27 &amp;&amp; 11 == Month &amp;&amp; Day &gt;= 1 &amp;&amp; Day &lt;= 7) {</span>
+<span class="nc" id="L75">                M = 0;</span>
+            }
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        } else if (1 == T) {</span>
+<span class="pc bpc" id="L78" title="2 of 4 branches missed.">            if (startTime[0] &lt;= 2 &amp;&amp; endTime[0] &gt;= 3) {</span>
+<span class="fc" id="L79">                poorTime[0]--;</span>
+            }
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">        } else if (2 == T) {</span>
+<span class="pc bpc" id="L82" title="3 of 4 branches missed.">            if (startTime[0] &lt; 2 &amp;&amp; endTime[0] &gt;= 3) {</span>
+<span class="nc" id="L83">                poorTime[0]++;</span>
+<span class="pc bpc" id="L84" title="3 of 6 branches missed.">            } else if (poorTime[1] &lt; 0 &amp;&amp; startTime[0] == 2 &amp;&amp; endTime[0] == 2) {</span>
+<span class="fc" id="L85">                poorTime[0]++;</span>
+            }
+        }
+<span class="fc" id="L88">        time = poorTime[0] * 60 + poorTime[1];</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">        if (poorTime[2] &gt; 0) {</span>
+<span class="fc" id="L90">            time++;</span>
+        }
+<span class="fc" id="L92">    }</span>
+
+    public static void Money() {
+<span class="fc bfc" id="L95" title="All 2 branches covered.">        if (time &lt;= 20) {</span>
+<span class="fc" id="L96">            money = (float) (time * 0.05);</span>
+        }
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        if (time &gt; 20) {</span>
+<span class="fc" id="L99">            money = (float) (1 + (time - 20) * 0.1);</span>
+        }
+<span class="fc" id="L101">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

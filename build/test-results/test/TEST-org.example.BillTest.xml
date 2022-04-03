@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.BillTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-04-03T12:09:02" hostname="XIAOMINOTEBOOK-" time="0.29">
+  <properties/>
+  <testcase name="[1] 2022, 03, 25, 12, 15, 26, 12, 15, 56, 0.05" classname="org.example.BillTest" time="0.172"/>
+  <testcase name="[2] 2022, 03, 27, 01, 59, 30, 03, 00, 15, 0.05" classname="org.example.BillTest" time="0.008"/>
+  <testcase name="[3] 2022, 11, 06, 02, 59, 50, 02, 00, 15, 0.05" classname="org.example.BillTest" time="0.004"/>
+  <testcase name="[4] 2022, 07, 15, 02, 05, 30, 02, 15, 20, 0.5" classname="org.example.BillTest" time="0.005"/>
+  <testcase name="[5] 2022, 03, 27, 01, 50, 20, 03, 05, 10, 0.75" classname="org.example.BillTest" time="0.007"/>
+  <testcase name="[6] 2022, 11, 06, 02, 50, 50, 02, 05, 30, 0.75" classname="org.example.BillTest" time="0.006"/>
+  <testcase name="[7] 2022, 07, 02, 06, 30, 45, 07, 29, 50, 5" classname="org.example.BillTest" time="0.028"/>
+  <testcase name="[8] 2022, 03, 27, 01, 30, 25, 03, 50, 25, 7" classname="org.example.BillTest" time="0.004"/>
+  <testcase name="[9] 2022, 11, 05, 23, 50, 25, 03, 50, 25, 29" classname="org.example.BillTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

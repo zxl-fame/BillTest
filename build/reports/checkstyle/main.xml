@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.44">
+<file name="D:\SchoolWork\SoftwareTest\BillTest\src\main\java\org\example\Bill.java">
+<error line="6" column="1" severity="error" message="工具类应隐藏 public 构造器。" source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="7" column="30" severity="error" message="名称 &apos;Three&apos; 必须匹配表达式： &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+<error line="13" column="24" severity="error" message="名称 &apos;Year&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="14" column="24" severity="error" message="名称 &apos;Month&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="15" column="24" severity="error" message="名称 &apos;Day&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="16" column="24" severity="error" message="名称 &apos;T&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="17" column="24" severity="error" message="名称 &apos;W&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="18" column="24" severity="error" message="名称 &apos;M&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="20" column="25" severity="error" message="参数共： 9个，最多：7个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="20" column="35" severity="error" message="参数： year 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="45" severity="error" message="参数： month 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="56" severity="error" message="参数： day 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="65" severity="error" message="参数： SHour 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="69" severity="error" message="名称 &apos;SHour&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="20" column="76" severity="error" message="参数： SMinute 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="80" severity="error" message="名称 &apos;SMinute&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="20" column="89" severity="error" message="参数： SSecond 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="20" column="93" severity="error" message="名称 &apos;SSecond&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="21" column="35" severity="error" message="参数： EHour 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="21" column="39" severity="error" message="名称 &apos;EHour&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="21" column="46" severity="error" message="参数： EMinute 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="21" column="50" severity="error" message="名称 &apos;EMinute&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="21" column="59" severity="error" message="参数： ESecond 应定义为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="21" column="63" severity="error" message="名称 &apos;ESecond&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="37" column="24" severity="error" message="名称 &apos;Date&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="41" column="22" severity="error" message="&apos;12&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="54" severity="error" message="&apos;5&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="72" severity="error" message="&apos;4&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="83" severity="error" message="&apos;100&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="96" severity="error" message="&apos;400&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="43" column="107" severity="error" message="&apos;7&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="21" severity="error" message="&apos;12&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="46" column="22" severity="error" message="&apos;12&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="49" column="42" severity="error" message="&apos;25&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="49" column="55" severity="error" message="&apos;31&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="51" column="24" severity="error" message="&apos;11&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="51" column="58" severity="error" message="&apos;7&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="61" column="24" severity="error" message="名称 &apos;Time&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="63" column="27" severity="error" message="&apos;24&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="69" column="17" severity="error" message="&apos;6&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="69" column="41" severity="error" message="&apos;27&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="70" column="46" severity="error" message="&apos;24&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="70" column="59" severity="error" message="&apos;30&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="72" column="28" severity="error" message="&apos;11&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="72" column="62" severity="error" message="&apos;7&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="75" column="24" severity="error" message="&apos;6&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="75" column="48" severity="error" message="&apos;26&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="75" column="68" severity="error" message="&apos;27&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="75" column="74" severity="error" message="&apos;11&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="75" column="108" severity="error" message="&apos;7&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="89" column="30" severity="error" message="&apos;60&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="95" column="24" severity="error" message="名称 &apos;Money&apos; 必须匹配表达式： &apos;^[a-z][a-zA-Z0-9]*$&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="96" column="21" severity="error" message="&apos;20&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="97" column="37" severity="error" message="&apos;0.05&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="99" column="20" severity="error" message="&apos;20&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="100" column="42" severity="error" message="&apos;20&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="100" column="48" severity="error" message="&apos;0.1&apos; 是一个魔术数字（直接常数）。" source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>
